@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PineApple
   - Trap
+  - KillZone
   layers:
   - Default
   - TransparentFX
@@ -37,7 +38,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - KillZone
   - Ground
   m_SortingLayers:
   - name: Background

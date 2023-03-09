@@ -17,17 +17,19 @@ public class PlayerLife : MonoBehaviour
         {
             Die();
         }
+
+        if(collision.gameObject.CompareTag("KillZone"))
+        {
+            Die();
+        }
         
     }
     private void Die()
     {
+        
         rb.bodyType=RigidbodyType2D.Static;
         anim.SetTrigger("death");
         
-    }
-    private void Respawn()
-    {
-        anim.SetTrigger("respawn");
     }
     private void RestartLvl()
     {

@@ -12,7 +12,7 @@ public class ItemCollector : MonoBehaviour
         {
             Destroy(collision.gameObject);
             PineApple++;
-            PineAppleText.text="PineApple: "+PineApple;
+            PineAppleText.text="PineApple: "+ PineApple;
         }   
     }
 }
