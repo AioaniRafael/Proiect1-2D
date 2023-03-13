@@ -6,10 +6,17 @@ using UnityEngine.SceneManagement;
 public class Finished : MonoBehaviour
 {
     [SerializeField] private AudioSource FinishEffect;
+    private bool lvlcompleted=false;
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        FinishEffect.Play();    
-        CompleteLevel();
+        if(!lvlcompleted)
+        {
+            FinishEffect.Play();    
+            Invoke("CompleteLevel",2f);
+            lvlcompleted=true;
+        }
+        
+        
     }
     private void CompleteLevel()
     {
